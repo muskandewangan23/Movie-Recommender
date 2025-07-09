@@ -18,7 +18,7 @@ It recommends movies based on genre similarity and viewer engagement.
 
 🔗 [Click here to try the app](https://movie-recommender-new.streamlit.app/)
 
-![App Screenshot](screenshot.png)
+<img src="screenshot.png" alt="App Screenshot" width="600"/>
 
 ---
 
