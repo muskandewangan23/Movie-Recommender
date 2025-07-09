@@ -1,23 +1,56 @@
 # 🎬 Movie Recommendation System
 
-This is a simple **Content-Based Movie Recommender** built using Python and Streamlit.
+A simple and interactive **Content-Based Movie Recommender System** built using Python and Streamlit.  
+It recommends movies based on genre similarity and viewer engagement.
+
+---
 
 ## 🚀 Features
-- Recommends top 5 movies based on genre similarity
-- Hybrid ranking using popularity (number of ratings)
-- Clean, user-friendly Streamlit UI
 
-## 📦 Dataset
-Uses [MovieLens](https://grouplens.org/datasets/movielens/) dataset:
-- `movies.csv`
-- `ratings.csv`
+- Top 5 movie recommendations based on input movie
+- Uses content-based filtering with TF-IDF & Cosine Similarity
+- Ranking boosted using popularity (number of ratings)
+- Clean Streamlit UI
 
-## 🛠 Built With
+---
+
+## 🖼 Live Demo
+
+🔗 [Click here to try the app](https://movie-recommender-new.streamlit.app/)
+
+![App Screenshot](screenshot.png)
+
+---
+
+## 📦 Dataset Used
+
+- [MovieLens Small Dataset (100k)](https://grouplens.org/datasets/movielens/)
+- Files used:
+  - `movies.csv` — movie titles & genres
+  - `ratings.csv` — user ratings
+
+---
+
+## 🧠 Recommender Logic
+
+- Extract genres from each movie
+- Apply **TF-IDF vectorization** on genres
+- Compute **cosine similarity**
+- Multiply similarity with `log(1 + number of ratings)` to rank
+
+---
+
+## 🛠 Tech Stack
+
+- Python
+- Pandas, NumPy, scikit-learn
 - Streamlit
-- pandas, numpy
-- scikit-learn (TF-IDF + cosine similarity)
 
-## 🧪 Try it Locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+---
+
+## 🧪 Run Locally
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/your-username/movie-recommender
+   cd movie-recommender
