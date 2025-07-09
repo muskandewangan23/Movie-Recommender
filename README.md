@@ -1,11 +1,11 @@
-# 🎬 Movie Recommendation System
+# Movie Recommendation System
 
 A simple and interactive **Content-Based Movie Recommender System** built using Python and Streamlit.  
 It recommends movies based on genre similarity and viewer engagement.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Top 5 movie recommendations based on input movie
 - Uses content-based filtering with TF-IDF & Cosine Similarity
@@ -14,7 +14,7 @@ It recommends movies based on genre similarity and viewer engagement.
 
 ---
 
-## 🖼 Live Demo
+## Live Demo
 
 🔗 [Click here to try the app](https://movie-recommender-new.streamlit.app/)
 
@@ -22,7 +22,7 @@ It recommends movies based on genre similarity and viewer engagement.
 
 ---
 
-## 📦 Dataset Used
+## Dataset Used
 
 - [MovieLens Small Dataset (100k)](https://grouplens.org/datasets/movielens/)
 - Files used:
@@ -31,7 +31,7 @@ It recommends movies based on genre similarity and viewer engagement.
 
 ---
 
-## 🧠 Recommender Logic
+## Recommender Logic
 
 - Extract genres from each movie
 - Apply **TF-IDF vectorization** on genres
@@ -40,7 +40,7 @@ It recommends movies based on genre similarity and viewer engagement.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Python
 - Pandas, NumPy, scikit-learn
